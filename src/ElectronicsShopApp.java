@@ -10,11 +10,8 @@ public class ElectronicsShopApp {
     	for(int i = 0; i < keyboards.length; i++) {
     		for(int j = 0; j < drives.length; j++) {
     			int newTotal = keyboards[i] + drives[j];
-    			System.out.println("new Total = "+newTotal);
-    			System.out.println("Money spent (pre-if) ="+moneySpent);
     			if(newTotal > moneySpent && newTotal <= s) {
     				moneySpent = newTotal;
-    				System.out.println("Money spent (if) = "+moneySpent);
     			}
     		}
     		
